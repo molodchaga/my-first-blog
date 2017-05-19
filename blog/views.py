@@ -3,6 +3,7 @@ from django.utils import timezone
 from .models import Post
 from .forms import PostForm
 from django.shortcuts import redirect
+
 # Create your views here.
 
 
@@ -29,3 +30,18 @@ def post_new(request):
     else:
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
+
+
+def post_edit(request, pk):
+        post = get_object_or_404(Post, pk=pk)   # передаем параметр pk из URL-адреса
+        if request.method == "POST":
+            form = PostForm(request.POST, instance=post) # получаем модель Post для редактирования при помощи get_object_or_404(Post, pk=pk) и передаем экземпляр post в качестве instance форме для сохранения
+            if form.is_valid():
+                post = form.save(commit=False)
+                post.author = request.user
+                post.published_date = timezone.now()
+                post.save()
+                return redirect('post_detail', pk=post.pk)
+        else:
+            form = PostForm(instance=post)
+        return render(request, 'blog/post_edit.html', {'form': form})
