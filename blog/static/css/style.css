@@ -9,54 +9,90 @@
 ########## body ##########
 body {
     background-color: #ffffff;
-
+    padding: 0;
+    margin: 0;
 }
 div{
     font-family: Century Gothic;
 }
+a:hover,
+a:focus,
+a:visited,
+a:active{
+    text-decoration: none;
+}
 ########## header ##########
-.top-header{
-    width: 100%;
-    background-color: #009400;
+.container{padding: 0; margin: 0;}
+header{
+    #width: 100%;
+    #background-color: #009400;
+    #padding: 0;
 }
-.top-header div{
-    background-color: #009400;
+header div{
+    #background-color: #0f9400;
 }
-.top-header .logo{
+header .logo{
     padding: 0;
-    float: left;
+    background-color: #0f9400;
 }
-.top-header h3, .top-header h3 a, .top-header h3 a:hover, .top-header h3 a:visited, .top-header h3 a:active{
+header h3,
+header h3 a{
     color: #000000;
     #background-color: #ff1155;
     font-size: 72px;
-    text-decoration: none;
     margin: 21 0 0 10;
     display: inline-block;
 }
 
-.top-header .search{
+header .search{
     height: 100px;
     float: left;
     padding: 45 0 0 20;
-    background-color: #ff1155;
+    #background-color: #ff1155;
 }
-.top-header .search form{
-    background-color: #ff00ff;
+header .search form{
+    #background-color: #ff00ff;
 }
-.top-header .search .input-group{
-    background-color: #ff000f;
+header .search .input-group{
+    #background-color: #ff000f;
 }
 
-.top-header .auth{
+header .auth{
     height: 100px;
     float: left;
 }
 ########## nav ##########
-nav{
-    display: inline-block;
-    width: 100%
+nav,
+nav li{
+
 }
+nav{
+    background-color: #666666;
+}
+nav li{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+nav a{
+    display: block;
+    padding: 0;
+    color: red;
+
+}
+ul.list-inline{
+    height: 40px;
+    #margin-bottom: 0px;
+}
+ul.list-inline a{
+    color: #ffffff;
+    font-size: 26px;
+    padding-top: 5px;
+}
+
+
+
+
 
     .page-header {
         background-color: #ff9400;
