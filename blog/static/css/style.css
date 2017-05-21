@@ -62,34 +62,29 @@ header .auth{
     float: left;
 }
 ########## nav ##########
-nav,
-nav li{
-
-}
-nav{
-    background-color: #666666;
-}
-nav li{
-    display: inline-block;
-    width: 20%;
-    text-align: center;
-}
-nav a{
-    display: block;
+ul.list-inline,
+ul.list-inline li{
+    margin: 0;
     padding: 0;
-    color: red;
-
 }
 ul.list-inline{
-    height: 40px;
-    #margin-bottom: 0px;
+    background-color: #666666;
+}
+ul.list-inline li{
+    display: inline-block;
+    width: 19%;
+    text-align: center;
 }
 ul.list-inline a{
+    display: block;
+    padding: 3 0;
     color: #ffffff;
-    font-size: 26px;
-    padding-top: 5px;
+    font-size: 24px;
+    #padding-top: 5px;
 }
-
+ul.list-inline a:hover{
+    background-color: red;
+}
 
 
 
