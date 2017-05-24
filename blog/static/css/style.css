@@ -86,20 +86,61 @@ header .auth{
 }
 ######### section ##########
 ######### side-bar ##########
-.left22{
+.sidebar{
 background-color:red;
-width:180px;
-float:left;
+
 }
 
 .contentushka{
 background-color: yellow;
 margin:0px; 
-margin-left:181px; 
-float: right;
-width: 70%;
 }
 
+
+.caption {
+    height: 170px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+.row-flex, .row-flex > div[class*='col-'] {  
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 1 auto;
+}
+.row-flex-wrap {
+    -webkit-flex-flow: row wrap;
+    align-content: flex-start;
+    flex:0;
+}
+.row-flex > div[class*='col-'] {
+     margin:-.2px; /* hack adjust for wrapping */
+}
 /*
 >>>>>>> 7b5b0eb3c129c401747bd04816953fc623995783
     .page-header {
