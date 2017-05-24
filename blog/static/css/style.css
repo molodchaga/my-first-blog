@@ -27,18 +27,12 @@ a:active{
     text-decoration: none;
 }
 ########## header ##########
-.container{padding: 0; margin: 0;}
-header{
-    #width: 100%;
-    #padding: 0;
-}
 header .logo{
     padding: 0;
 }
 header h3,
 header h3 a{
     color: #000000;
-    #background-color: #ff1155;
     font-size: 72px;
     margin: 21 0 0 10;
     display: inline-block;
@@ -48,7 +42,6 @@ header .search{
     height: 100px;
     float: left;
     padding: 45 0 0 20;
-    #background-color: #ff1155;
 }
 header .search form{
     #background-color: #ff00ff;
@@ -62,6 +55,7 @@ header .auth{
     float: left;
 }
 ########## nav ##########
+
 .listinline, .listinline li{
     margin: 0;
     padding: 0;
@@ -77,6 +71,9 @@ header .auth{
     width: 20%;
     line-height: normal;
     text-align: center;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
 }
 .listinline a{
     display: block;
@@ -87,9 +84,24 @@ header .auth{
 .listinline a:hover{
     background-color: red;
 }
+######### section ##########
+######### side-bar ##########
+.left22{
+background-color:red;
+width:180px;
+float:left;
+}
 
+.contentushka{
+background-color: yellow;
+margin:0px; 
+margin-left:181px; 
+float: right;
+width: 70%;
+}
 
-
+/*
+>>>>>>> 7b5b0eb3c129c401747bd04816953fc623995783
     .page-header {
         background-color: #ff9400;
         margin-top: 0;
@@ -141,3 +153,4 @@ header .auth{
     .post h1 a, .post h1 a:visited {
         color: #000000;
     }
+    */
