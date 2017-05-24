@@ -1,7 +1,10 @@
 ########## fonts ##########
 @font-face {
   font-family: 'CenturyGothic';
-  src: url('fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),  url('fonts/CenturyGothic.woff') format('woff'), url('fonts/CenturyGothic.ttf')  format('truetype'), url('fonts/CenturyGothic.svg#CenturyGothic') format('svg');
+  src: url('/fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),  
+    url('/fonts/CenturyGothic.woff') format('woff'), 
+    url('/fonts/CenturyGothic.ttf')  format('truetype'), 
+    url('/fonts/CenturyGothic.svg#CenturyGothic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,7 +16,9 @@ body {
     margin: 0;
 }
 div{
-    font-family: Century Gothic;
+    font-family: 'Century Gothic', sans-serif;
+    #font-family: 'Open Sans', sans-serif;
+    #font-family: 'Didact Gothic', sans-serif;
 }
 a:hover,
 a:focus,
@@ -25,15 +30,10 @@ a:active{
 .container{padding: 0; margin: 0;}
 header{
     #width: 100%;
-    #background-color: #009400;
     #padding: 0;
-}
-header div{
-    #background-color: #0f9400;
 }
 header .logo{
     padding: 0;
-    background-color: #0f9400;
 }
 header h3,
 header h3 a{
@@ -62,30 +62,31 @@ header .auth{
     float: left;
 }
 ########## nav ##########
-ul.list-inline,
-ul.list-inline li{
+.listinline, .listinline li{
     margin: 0;
     padding: 0;
 }
-ul.list-inline{
+.listinline{
     background-color: #666666;
+    font-size: 0px;
+    line-height: 0px;
+    padding: 0px; 
 }
-ul.list-inline li{
+.listinline li{
     display: inline-block;
-    width: 19%;
+    width: 20%;
+    line-height: normal;
     text-align: center;
 }
-ul.list-inline a{
+.listinline a{
     display: block;
-    padding: 3 0;
+    padding: 10 0;
     color: #ffffff;
     font-size: 24px;
-    #padding-top: 5px;
 }
-ul.list-inline a:hover{
+.listinline a:hover{
     background-color: red;
 }
-
 
 
 

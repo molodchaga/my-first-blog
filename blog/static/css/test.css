@@ -1,0 +1,22 @@
+#nav5 {
+  background: #000000;
+}
+#nav5 li {
+  display: inline-block;
+  width: 20%; /* 4 пункта меню, то есть 100%/4 */
+  text-align: center;
+  background-color: green;
+
+}
+#nav5 a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+#nav5 a:hover {
+  background: rgb(96,145,172);
+}
+ul {list-style: none;
+  padding-left: 0; /*убираем отступы*/
+
+  }
