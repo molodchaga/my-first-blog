@@ -22,23 +22,12 @@ a:active{
     text-decoration: none;
 }
 ########## header ##########
-.container{padding: 0; margin: 0;}
-header{
-    #width: 100%;
-    #background-color: #009400;
-    #padding: 0;
-}
-header div{
-    #background-color: #0f9400;
-}
 header .logo{
     padding: 0;
-    background-color: #0f9400;
 }
 header h3,
 header h3 a{
     color: #000000;
-    #background-color: #ff1155;
     font-size: 72px;
     margin: 21 0 0 10;
     display: inline-block;
@@ -48,7 +37,6 @@ header .search{
     height: 100px;
     float: left;
     padding: 45 0 0 20;
-    #background-color: #ff1155;
 }
 header .search form{
     #background-color: #ff00ff;
@@ -62,33 +50,46 @@ header .auth{
     float: left;
 }
 ########## nav ##########
-ul.list-inline,
-ul.list-inline li{
+ul.list-inline{
+        font-size: 0px;
+}
+.list-inline{
+    background-color: #666666;
+}
+.list-inline li{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    font-size: 24px;
     margin: 0;
     padding: 0;
 }
-ul.list-inline{
-    background-color: #666666;
-}
-ul.list-inline li{
-    display: inline-block;
-    width: 19%;
-    text-align: center;
-}
-ul.list-inline a{
+.list-inline a{
     display: block;
     padding: 3 0;
     color: #ffffff;
-    font-size: 24px;
-    #padding-top: 5px;
+
 }
-ul.list-inline a:hover{
+.list-inline a:hover{
     background-color: red;
 }
+######### section ##########
+######### side-bar ##########
+.left22{
+background-color:red;
+width:180px;
+float:left;
+}
 
+.contentushka{
+background-color: yellow;
+margin:0px; 
+margin-left:181px; 
+float: right;
+width: 70%;
+}
 
-
-
+/*
     .page-header {
         background-color: #ff9400;
         margin-top: 0;
@@ -140,3 +141,4 @@ ul.list-inline a:hover{
     .post h1 a, .post h1 a:visited {
         color: #000000;
     }
+    */
