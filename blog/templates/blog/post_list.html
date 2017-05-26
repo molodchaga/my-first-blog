@@ -1,66 +1,33 @@
 {% extends 'blog/base.html' %}
 {% block content %}
     {% for post in posts %}
-<<<<<<< HEAD
                         <div class="thumbnail">
-                            <div class="caption">
-                                <div>
-                                <h4><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h4>
+                            <div >
+                                <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
                                 <img src="http://placehold.it/320x150" alt="">
-
-                                <p>{{ post.text|linebreaksbr }}</p>
-                                </div>
-                                <div class="ratings">
-
-                                    <div>
-                                        <p class="pull-left">{{ post.published_date }}</p>
-                                    </div>
-                                    <div>
-                                        <p class="pull-left">12 reviews</p>
-                                    </div>
-                                    <div>
-                                        <p class="pull-left">
+                                <h4>{{ post.text|linebreaksbr }}</h4>
+                                <span class="tags">
+                                    Метки: 
+                                    <a href="#">#звездные войны</a>
+                                    <a href="#">#съемка</a>
+                                    <a href="#">#фотография</a>
+                                    <a href="#">#эпизод IV</a>
+                                </span>
+                                <div class="post-data">
+                                    <span class="">{{ post.published_date }}</span>
+                                    <span class="">12 reviews</span>
+                                    <span class="ratings">
+                                        <a href="/vote?id=айдизаписи&plus=true">дать в морду <span class="glyphicon glyphicon-circle-arrow-down"></span></a>
                                             <span class="glyphicon glyphicon-star"></span>
                                             <span class="glyphicon glyphicon-star"></span>
                                             <span class="glyphicon glyphicon-star"></span>
                                             <span class="glyphicon glyphicon-star"></span>
                                             <span class="glyphicon glyphicon-star-empty"></span>
-                                        </p>
-                                    </div>
+                                        <a href="/vote?id=айдизаписи&plus=false">налить <span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+                                    </span>
                                 </div>
                             </div>
-
-                                    
-                                        
-                                    
-                           
-
-
                         </div>
-
-=======
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">{{ post.published_date }}</h4>
-                                <h4><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
-                                </h4>
-                                <p>{{ post.text|linebreaksbr }}</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">12 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
->>>>>>> 9986c20acc2822e1f0a21968804566439681a442
     {% endfor %}
 {% endblock content %}
 

@@ -16,8 +16,8 @@ body {
     margin: 0;
 }
 div{
-    font-family: 'Century Gothic', sans-serif;
-    #font-family: 'Open Sans', sans-serif;
+    #font-family: 'Century Gothic', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     #font-family: 'Didact Gothic', sans-serif;
 }
 a:hover,
@@ -65,6 +65,7 @@ header .auth{
     font-size: 0px;
     line-height: 0px;
     padding: 0px; 
+    margin: 10 0 15 0;
 }
 .listinline li{
     display: inline-block;
@@ -82,53 +83,76 @@ header .auth{
     font-size: 24px;
 }
 .listinline a:hover{
-    background-color: red;
+    #background-color: red;
 }
 ######### section ##########
 ######### side-bar ##########
-.sidebar1{
-background-color: red;
+.sidebar77{
+    padding: 0;
+}
+.aaaa, .aaaa li{
+    margin: 10 0;
+    padding: 0;
+}
+.aaaa{
+    padding: 0;
+    margin: 0 0 20 0;
+    background-color: #444444;
+}
+.aaaa a{
+    color: red;
+    background-color: #444444;
+    font-size: 22px;
 }
 
-.contentushka{
-background-color: yellow;
-margin: 0px; 
-}
+.ratings{
+    padding: 0 100;
+    color: #d17581;
 
-.caption { 
-    #overflow: hidden;
-    padding: 0px;
-    margin: 0px;
-}
 
-.caption h4 {
-    white-space: nowrap;
 }
-
+.post-data{
+    border-top: 1px solid #eeeeee;
+    padding: 20px;
+    margin-top: 20px;
+}
+.thumbnail {
+    padding: 0 10;
+}
 
 .thumbnail img {
     width: 100%;
 }
 
-.ratings {
-    display: inline-block;
-    padding-right: 10px;
-    padding-left: 10px;
-    color: #d17581;
-    float: left;
-    width: 100%;
+.thumbnail h2{
+    margin: 15 0;
+    font-weight: bold;
+    color: #000000;
 }
-.date-post{
+.thumbnail a{
 
-    float: left;
+    font-weight: bold;
+    color: #000000;
 }
-.thumbnail {
-    padding: 0;
+.thumbnail h4{
+    margin: 0;
+    padding: 20 0;
+    font-weight: none;
 }
-
 .thumbnail .caption-full {
     padding: 9px;
     color: #333;
+}
+.tags{
+    font-size: 14px;
+}
+.tags a{
+    padding: 0 10;
+    color: blue;
+    font-weight: normal;
+}
+.tags a:hover{
+    text-decoration: underline;
 }
 
 
